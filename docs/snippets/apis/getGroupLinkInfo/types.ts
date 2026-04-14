@@ -1,7 +1,7 @@
 export type GetGroupLinkInfoPayload = {
     link: string;
     /**
-     * Mặc định 1
+     * Default: 1
      */
     memberPage?: number;
 };

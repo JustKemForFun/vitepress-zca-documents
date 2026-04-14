@@ -3,11 +3,11 @@ export type ReviewPendingMemberRequestPayload = {
     isApprove: boolean;
 };
 
-export enum ReviewPendingMemberRequestStatus {
+export declare enum ReviewPendingMemberRequestStatus {
     SUCCESS = 0,
     NOT_IN_PENDING_LIST = 170,
     ALREADY_IN_GROUP = 178,
-    INSUFFICIENT_PERMISSION = 166,
+    INSUFFICIENT_PERMISSION = 166
 }
 
 export type ReviewPendingMemberRequestResponse = {

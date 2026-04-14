@@ -1,3 +1,1 @@
-export type {
-    SearchStickerResponse,
-} from "zca-js";
+export type SearchStickerResponse = StickerBasic[];

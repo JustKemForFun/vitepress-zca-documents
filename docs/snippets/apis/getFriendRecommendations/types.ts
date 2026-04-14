@@ -14,7 +14,7 @@ export type FriendRecommendationsDataInfo = {
     gender: Gender;
     dob: number;
     type: number;
-    recommType: number;
+    recommType: FriendRecommendationsType;
     recommSrc: number;
     recommTime: number;
     recommInfo: {
@@ -32,7 +32,7 @@ export type FriendRecommendationsRecommItem = {
     dataInfo: FriendRecommendationsDataInfo;
 };
 
-export type FriendRecommendationsResponse = {
+export type GetFriendRecommendationsResponse = {
     expiredDuration: number;
     collapseMsgListConfig: FriendRecommendationsCollapseMsgListConfig;
     recommItems: FriendRecommendationsRecommItem[];

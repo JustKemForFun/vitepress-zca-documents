@@ -1,3 +1,1 @@
-export type {
-    RejectFriendRequestResponse,
-} from "zca-js";
+export type RejectFriendRequestResponse = "";

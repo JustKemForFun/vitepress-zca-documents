@@ -1,3 +1,3 @@
-export type {
-    GetMultiUsersByPhonesResponse,
-} from "zca-js";
+export type GetMultiUsersByPhonesResponse = {
+    [phoneNumber: string]: UserBasic;
+};

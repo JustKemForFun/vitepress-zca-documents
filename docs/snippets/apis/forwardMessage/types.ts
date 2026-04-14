@@ -13,7 +13,6 @@ export type ForwardMessageSuccess = {
     clientId: string;
     msgId: string;
 };
-
 export type ForwardMessageFail = {
     clientId: string;
     error_code: string;

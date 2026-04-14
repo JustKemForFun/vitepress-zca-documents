@@ -1,3 +1,1 @@
-export type {
-    GetCloseFriendsResponse,
-} from "zca-js";
+export type GetCloseFriendsResponse = User[];

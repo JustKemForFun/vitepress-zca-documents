@@ -1,3 +1,1 @@
-export type {
-    SharePollResponse,
-} from "zca-js";
+export type SharePollResponse = "";

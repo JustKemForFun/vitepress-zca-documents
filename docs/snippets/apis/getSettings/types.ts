@@ -1,3 +1,1 @@
-export type {
-    GetSettingsResponse,
-} from "zca-js";
+export type GetSettingsResponse = UserSetting;

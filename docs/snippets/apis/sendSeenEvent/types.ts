@@ -2,7 +2,7 @@ export type SendSeenEventResponse = {
     status: number;
 };
 
-export type SendSeenEventMessageParam = {
+export type SendSeenEventMessageParams = {
     msgId: string;
     cliMsgId: string;
     uidFrom: string;

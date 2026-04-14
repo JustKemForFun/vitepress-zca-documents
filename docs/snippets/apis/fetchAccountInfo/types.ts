@@ -1,1 +1,3 @@
-export type FetchAccountInfoResponse = User;
+export type FetchAccountInfoResponse = {
+    profile: User;
+};

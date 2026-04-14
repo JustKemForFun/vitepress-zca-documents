@@ -1,11 +1,11 @@
 export type GetCatalogListPayload = {
     /**
-     * Mặc định 20
+     * Number of items to retrieve (default: 20)
      */
     limit?: number;
     lastProductId?: number;
     /**
-     * Mặc định 0
+     * Page number (default: 0)
      */
     page?: number;
 };

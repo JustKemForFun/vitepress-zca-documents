@@ -9,8 +9,5 @@ export type DeleteMessageDestination = {
         uidFrom: string;
     };
     threadId: string;
-    /**
-     * mặc định ThreadType.User
-     */
     type?: ThreadType;
 };

@@ -1,3 +1,1 @@
-export type {
-    UpdateProfileBioResponse,
-} from "zca-js";
+export type UpdateProfileBioResponse = "";

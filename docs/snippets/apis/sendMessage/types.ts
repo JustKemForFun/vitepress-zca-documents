@@ -1,35 +1,24 @@
-export type MessageContent = {
-    /**
-     * Nội dung văn bản
-     */
-    msg: string;
-    /**
-     * Định dạng nội dung văn bản
-     */
-    styles?: Style[];
-    /**
-     * Mức độ quan trọng của tin nhắn
-     */
-    urgency?: Urgency;
-    /**
-     * Tin nhắn trích dẫn
-     */
-    quote?: SendMessageQuote;
-    /**
-     * Đề cập người dùng trong nhóm
-     */
-    mentions?: Mention[];
-    /**
-     * Tệp đính kèm
-     */
-    attachments?: AttachmentSource | AttachmentSource[];
-    /**
-     * Thời gian tồn tại của tin nhắn, mili giây
-     */
-    ttl?: number;
+export type SendMessageResult = {
+    msgId: number;
 };
 
-export enum TextStyle {
+export type SendMessageResponse = {
+    message: SendMessageResult | null;
+    attachment: SendMessageResult[];
+};
+
+export type SendMessageQuote = {
+    content: TMessage["content"];
+    msgType: TMessage["msgType"];
+    propertyExt: TMessage["propertyExt"];
+    uidFrom: TMessage["uidFrom"];
+    msgId: TMessage["msgId"];
+    cliMsgId: TMessage["cliMsgId"];
+    ts: TMessage["ts"];
+    ttl: TMessage["ttl"];
+};
+
+export declare enum TextStyle {
     Bold = "b",
     Italic = "i",
     Underline = "u",
@@ -42,63 +31,71 @@ export enum TextStyle {
     Big = "f_18",
     UnorderedList = "lst_1",
     OrderedList = "lst_2",
-    Indent = "ind_$",
+    Indent = "ind_$"
+}
+
+export type Style = {
+    start: number;
+    len: number;
+    st: Exclude<TextStyle, TextStyle.Indent>;
+} | {
+    start: number;
+    len: number;
+    st: TextStyle.Indent;
+    /**
+     * Number of spaces used for indentation.
+     */
+    indentSize?: number;
 };
 
-export type Style =
-    | {
-          start: number; // vị trí bắt đầu định dạng
-          len: number; // độ dài văn bản tính từ vị trí bắt đầu
-          st: Exclude<TextStyle, TextStyle.Indent>; // định dạng
-      }
-    | {
-          start: number; // vị trí bắt đầu định dạng
-          len: number; // độ dài văn bản tính từ vị trí bắt đầu
-          st: TextStyle.Indent;
-          /**
-           * Độ dài thục lề
-           */
-          indentSize?: number;
-      };
-
-export enum Urgency {
-    Default,
-    Important,
-    Urgent,
-};
+export declare enum Urgency {
+    Default = 0,
+    Important = 1,
+    Urgent = 2
+}
 
 export type Mention = {
     /**
-     * vị trí bắt đầu chuỗi đề cập
+     * mention position
      */
     pos: number;
     /**
-     * độ dài chuỗi đề cập
-     */
-    len: number;
-    /**
-     * id người dùng cần đề cập
+     * id of the mentioned user
      */
     uid: string;
+    /**
+     * length of the mention
+     */
+    len: number;
 };
 
-export type SendMessageQuote = {
-    content: TMessage["content"];
-    msgType: TMessage["msgType"];
-    propertyExt: TMessage["propertyExt"];
-
-    uidFrom: TMessage["uidFrom"];
-    msgId: TMessage["msgId"];
-    cliMsgId: TMessage["cliMsgId"];
-    ts: TMessage["ts"];
-    ttl: TMessage["ttl"];
-};
-
-export type SendMessageResult = {
-    msgId: number;
-};
-
-export type SendMessageResponse = {
-    message: SendMessageResult | null;
-    attachment: SendMessageResult[];
+export type MessageContent = {
+    /**
+     * Text content of the message
+     */
+    msg: string;
+    /**
+     * Text styles
+     */
+    styles?: Style[];
+    /**
+     * Urgency of the message
+     */
+    urgency?: Urgency;
+    /**
+     * Quoted message (optional)
+     */
+    quote?: SendMessageQuote;
+    /**
+     * Mentions in the message (optional)
+     */
+    mentions?: Mention[];
+    /**
+     * Attachments in the message (optional)
+     */
+    attachments?: AttachmentSource | AttachmentSource[];
+    /**
+     * Time to live in milliseconds
+     */
+    ttl?: number;
 };

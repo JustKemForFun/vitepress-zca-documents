@@ -12,9 +12,9 @@ export type GetBizAccountResponse = {
         enable_add: number;
         cta_profile: number;
         /**
-         * Đường dẫn tương đối để xây dựng URL danh mục sản phẩm.
+         * Relative path used to build the catalog URL.
          *
-         * vd: https://catalog.zalo.me/${cta_catalog}
+         * Example: https://catalog.zalo.me/${cta_catalog}
          */
         cta_catalog: string | null;
     } | null;

@@ -1,10 +1,10 @@
 export type ListBoardOptions = {
     /**
-     * Mặc định 1
+     * Page number (default: 1)
      */
     page?: number;
     /**
-     * Mặc định 20
+     * Number of items to retrieve (default: 20)
      */
     count?: number;
 };

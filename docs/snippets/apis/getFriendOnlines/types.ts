@@ -1,4 +1,10 @@
-export type {
-    GetFriendOnlinesStatus,
-    GetFriendOnlinesResponse,
-} from "zca-js";
+export type GetFriendOnlinesStatus = {
+    userId: string;
+    status: string;
+};
+
+export type GetFriendOnlinesResponse = {
+    predefine: string[];
+    ownerStatus: string;
+    onlines: GetFriendOnlinesStatus[];
+};

@@ -1,3 +1,1 @@
-export type {
-    UpgradeGroupToCommunityResponse,
-} from "zca-js";
+export type UpgradeGroupToCommunityResponse = "";

@@ -1,6 +1,8 @@
-export type SendDeliveredEventResponse = "" | { status: number };
+export type SendDeliveredEventResponse = "" | {
+    status: number;
+};
 
-export type SendDeliveredEventMessageParam = {
+export type SendDeliveredEventMessageParams = {
     msgId: string;
     cliMsgId: string;
     uidFrom: string;

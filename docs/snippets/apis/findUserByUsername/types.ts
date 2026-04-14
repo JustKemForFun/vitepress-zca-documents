@@ -1,3 +1,1 @@
-export type {
-    FindUserByUsernameResponse,
-} from "zca-js";
+export type FindUserByUsernameResponse = UserBasic;

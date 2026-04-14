@@ -1,10 +1,31 @@
 export type SendVideoOptions = {
+    /**
+     * Optional message to send along with the video
+     */
     msg?: string;
+    /**
+     * URL of the video
+     */
     videoUrl: string;
+    /**
+     * URL of the thumbnail
+     */
     thumbnailUrl: string;
+    /**
+     * Video duration in milliseconds || Eg: video duration: 5.5s => 5.5 * 1000 = 5500
+     */
     duration?: number;
+    /**
+     * Width of the video
+     */
     width?: number;
+    /**
+     * Height of the video
+     */
     height?: number;
+    /**
+     * Time to live in milliseconds (default: 0)
+     */
     ttl?: number;
 };
 

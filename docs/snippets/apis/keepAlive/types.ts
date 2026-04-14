@@ -1,1 +1,3 @@
-export type KeepAliveResponse = { config_vesion: number };
+export type KeepAliveResponse = {
+    config_vesion: number;
+};

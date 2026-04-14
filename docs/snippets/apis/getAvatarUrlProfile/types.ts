@@ -1,3 +1,5 @@
-export type {
-    GetAvatarUrlProfileResponse,
-} from "zca-js";
+export type GetAvatarUrlProfileResponse = {
+    [userId: string]: {
+        avatar: string;
+    };
+};

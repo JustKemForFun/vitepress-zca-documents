@@ -1,20 +1,18 @@
 export type UpdateProductCatalogPayload = {
     catalogId: string;
-
     productId: string;
     productName: string;
     price: string;
     description: string;
     createTime: number;
-
     /**
-     * Tối đa 5 tệp, bỏ qua nếu dùng product_photos
+     * Upto 5 media files are allowed, will be ignored if product_photos is provided
      */
     files?: AttachmentSource[];
     /**
-     * Danh sách URL ảnh sản phẩm, tối đa 5
+     * List of product photo URLs, upto 5
      *
-     * Có thể lấy URL tệp thủ công với api `uploadProductPhoto`
+     * You can manually get the URL using `uploadProductPhoto` api
      */
     product_photos?: string[];
 };

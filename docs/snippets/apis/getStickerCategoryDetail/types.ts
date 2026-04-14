@@ -1,3 +1,1 @@
-export type {
-    GetStickerCategoryDetailResponse,
-} from "zca-js";
+export type GetStickerCategoryDetailResponse = StickerDetail[];

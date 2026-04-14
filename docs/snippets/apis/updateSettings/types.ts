@@ -1,6 +1,6 @@
 export type UpdateSettingsResponse = "";
 
-export enum UpdateSettingsType {
+export declare enum UpdateSettingsType {
     ViewBirthday = "view_birthday",
     ShowOnlineStatus = "show_online_status",
     DisplaySeenStatus = "display_seen_status",
@@ -12,5 +12,5 @@ export enum UpdateSettingsType {
     AddFriendViaContact = "add_friend_via_contact",
     DisplayOnRecommendFriend = "display_on_recommend_friend",
     ArchivedChat = "archivedChatStatus",
-    QuickMessage = "quickMessageStatus",
-};
+    QuickMessage = "quickMessageStatus"
+}

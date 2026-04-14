@@ -1,30 +1,30 @@
 export type CreatePollOptions = {
     /**
-     * Câu hỏi.
+     * Question for the poll.
      */
     question: string;
     /**
-     * Danh sách các lựa chọn.
+     * List of options for the poll.
      */
     options: string[];
     /**
-     * Thời hạn của cuộc bình chọn, đơn vị mili giây, mặc định 0 (vô hạn).
+     * Poll expiration time in milliseconds (0 = no expiration).
      */
     expiredTime?: number;
     /**
-     * Cho phép chọn nhiều lựa chọn, mặc định false.
+     * Allows multiple choices in the poll.
      */
     allowMultiChoices?: boolean;
     /**
-     * Cho phép thành viên thêm lựa chọn, mặc định false.
+     * Allows members to add new options to the poll.
      */
     allowAddNewOption?: boolean;
     /**
-     * Ẩn kết quả cho đến khi người dùng bình chọn, mặc định false.
+     * Hides voting results until the user has voted.
      */
     hideVotePreview?: boolean;
     /**
-     * Ẩn danh sách người bình chọn, mặc định false.
+     * Hides poll voters (anonymous poll).
      */
     isAnonymous?: boolean;
 };

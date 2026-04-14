@@ -1,3 +1,3 @@
-export type {
-    UpdateActiveStatusResponse,
-} from "zca-js";
+export type UpdateActiveStatusResponse = {
+    status: boolean;
+};

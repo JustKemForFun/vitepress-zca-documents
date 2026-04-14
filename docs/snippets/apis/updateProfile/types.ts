@@ -1,7 +1,10 @@
 export type UpdateProfilePayload = {
     profile: {
         name: string;
-        dob: `${string}-${string}-${string}`; // yyyy-mm-dd
+        /**
+         * Date of birth in the format YYYY-MM-DD
+         */
+        dob: `${string}-${string}-${string}`;
         gender: Gender;
     };
     biz?: Partial<{

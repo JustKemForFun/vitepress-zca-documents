@@ -1,3 +1,3 @@
-export type {
-    VotePollResponse,
-} from "zca-js";
+export type VotePollResponse = {
+    options: PollOptions[];
+};
