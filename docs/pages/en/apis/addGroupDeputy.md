@@ -7,7 +7,7 @@
 * memberId `string` | `string[]`
 * groupId `string`
 
-### ParametersParameters
+### Returns
 
 `Promise<AddGroupDeputyResponse>`
 
