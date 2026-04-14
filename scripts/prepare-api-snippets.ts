@@ -1,5 +1,5 @@
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 
 const SNIPPETS_DIR = path.resolve(process.cwd(), "docs", "snippets", "apis");
 const APIS_DIR = path.resolve(process.cwd(), "docs", "pages", "vi", "apis");
