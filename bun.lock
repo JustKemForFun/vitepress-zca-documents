@@ -1,5 +1,6 @@
 {
   "lockfileVersion": 1,
+  "configVersion": 0,
   "workspaces": {
     "": {
       "devDependencies": {
@@ -8,7 +9,7 @@
         "node-fetch": "^3.3.2",
         "vitepress": "^2.0.0-alpha.15",
         "vitepress-plugin-group-icons": "^1.6.5",
-        "zca-js": "^2.0.4",
+        "zca-js": "^2.1.2",
       },
     },
   },
@@ -447,7 +448,7 @@
 
     "ws": ["ws@8.18.3", "", { "peerDependencies": { "bufferutil": "^4.0.1", "utf-8-validate": ">=5.0.2" }, "optionalPeers": ["bufferutil", "utf-8-validate"] }, "sha512-PEIGCY5tSlUt50cqyMXfCzX+oOPqN0vuGqWzbcJ2xvnkzkq46oOpz7dQaTDBdfICb4N14+GARUDw2XV2N4tvzg=="],
 
-    "zca-js": ["zca-js@2.0.4", "", { "dependencies": { "crypto-js": "^4.2.0", "form-data": "^4.0.4", "json-bigint": "^1.0.0", "pako": "^2.1.0", "semver": "^7.6.3", "spark-md5": "^3.0.2", "tough-cookie": "^5.0.0", "ws": "^8.18.0" } }, "sha512-rxa2mV1N6UAxyIjQVdCXyiBmbqu/qZtCsXkfYhjU7rVxThvHYbBvtCMN+XXOkc13GRSrT8MNGGzD4B6bQU+QFw=="],
+    "zca-js": ["zca-js@2.1.2", "", { "dependencies": { "crypto-js": "^4.2.0", "form-data": "^4.0.4", "json-bigint": "^1.0.0", "pako": "^2.1.0", "semver": "^7.6.3", "spark-md5": "^3.0.2", "tough-cookie": "^5.0.0", "ws": "^8.18.0" } }, "sha512-82+zCqoIXnXEF6C9YuN3Kf7WKlyyujY/6Ejl2n8PkwazYkBK0k7kiPd8S7nHvC5Wl7vjwGRhDYeAM8zTHyoRxQ=="],
 
     "zwitch": ["zwitch@2.0.4", "", {}, "sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A=="],
 

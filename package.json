@@ -10,6 +10,6 @@
     "node-fetch": "^3.3.2",
     "vitepress": "^2.0.0-alpha.15",
     "vitepress-plugin-group-icons": "^1.6.5",
-    "zca-js": "^2.0.4"
+    "zca-js": "^2.1.2"
   }
 }
