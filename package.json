@@ -2,12 +2,14 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "sync:apis": "tsx scripts/sync-apis-from-zca.ts"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",
     "http-proxy-agent": "^7.0.2",
     "node-fetch": "^3.3.2",
+    "tsx": "^4.21.0",
     "vitepress": "^2.0.0-alpha.15",
     "vitepress-plugin-group-icons": "^1.6.5",
     "zca-js": "^2.1.2"
