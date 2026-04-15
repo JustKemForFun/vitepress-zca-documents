@@ -8,15 +8,15 @@ export type CreateGroupResponse = {
 
 export type CreateGroupOptions = {
     /**
-     * Group name
+     * Tên nhóm
      */
     name?: string;
     /**
-     * List of member IDs to add to the group
+     * Danh sách ID thành viên nhóm (trừ bản thân)
      */
     members: string[];
     /**
-     * Avatar source, can be a file path or an Attachment object
+     * Ảnh nhóm (tùy chọn)
      */
     avatarSource?: AttachmentSource;
     /**

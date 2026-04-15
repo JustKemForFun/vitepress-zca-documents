@@ -1,14 +1,14 @@
 export type EditNoteOptions = {
     /**
-     * New note title
+     * Tiêu đề
      */
     title: string;
     /**
-     * Topic ID to edit note from
+     * ID ghi chú
      */
     topicId: string;
     /**
-     * Should the note be pinned?
+     * Ghim ghi chú?, mặc định `false`
      */
     pinAct?: boolean;
 };

@@ -18,7 +18,7 @@ export type SendMessageQuote = {
     ttl: TMessage["ttl"];
 };
 
-export declare enum TextStyle {
+export enum TextStyle {
     Bold = "b",
     Italic = "i",
     Underline = "u",
@@ -35,20 +35,20 @@ export declare enum TextStyle {
 }
 
 export type Style = {
-    start: number;
-    len: number;
-    st: Exclude<TextStyle, TextStyle.Indent>;
+    start: number; // vị trí bắt đầu định dạng
+    len: number; // độ dài văn bản tính từ vị trí bắt đầu
+    st: Exclude<TextStyle, TextStyle.Indent>; // định dạng
 } | {
-    start: number;
-    len: number;
+    start: number; // vị trí bắt đầu định dạng
+    len: number; // độ dài văn bản tính từ vị trí bắt đầu
     st: TextStyle.Indent;
     /**
-     * Number of spaces used for indentation.
+     * Độ dài thực lề
      */
     indentSize?: number;
 };
 
-export declare enum Urgency {
+export enum Urgency {
     Default = 0,
     Important = 1,
     Urgent = 2
@@ -56,46 +56,46 @@ export declare enum Urgency {
 
 export type Mention = {
     /**
-     * mention position
+     * Vị trí bắt đầu chuỗi đề cập
      */
     pos: number;
     /**
-     * id of the mentioned user
+     * ID người dùng được đề cập
      */
     uid: string;
     /**
-     * length of the mention
+     * Độ dài chuỗi đề cập
      */
     len: number;
 };
 
 export type MessageContent = {
     /**
-     * Text content of the message
+     * Nội dung văn bản
      */
     msg: string;
     /**
-     * Text styles
+     * Định dạng văn bản
      */
     styles?: Style[];
     /**
-     * Urgency of the message
+     * Mức độ quan trọng
      */
     urgency?: Urgency;
     /**
-     * Quoted message (optional)
+     * Tin nhắn trích dẫn (tùy chọn)
      */
     quote?: SendMessageQuote;
     /**
-     * Mentions in the message (optional)
+     * Đề cập trong tin nhắn (tùy chọn)
      */
     mentions?: Mention[];
     /**
-     * Attachments in the message (optional)
+     * Tệp đính kèm trong tin nhắn (tùy chọn)
      */
     attachments?: AttachmentSource | AttachmentSource[];
     /**
-     * Time to live in milliseconds
+     * Thời gian tồn tại, mặc định 0 (vô hạn)
      */
     ttl?: number;
 };

@@ -1,10 +1,10 @@
 export type GetGroupBlockedMemberPayload = {
     /**
-     * Page number (default: 1)
+     * Mặc định 1
      */
     page?: number;
     /**
-     * Number of items to retrieve (default: 50)
+     * Mặc định 50
      */
     count?: number;
 };

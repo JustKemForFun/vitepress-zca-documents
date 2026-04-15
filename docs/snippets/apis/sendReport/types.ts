@@ -1,4 +1,4 @@
-export declare enum ReportReason {
+export enum ReportReason {
     Sensitive = 1,
     Annoy = 2,
     Fraud = 3,

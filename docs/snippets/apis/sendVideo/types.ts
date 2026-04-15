@@ -1,30 +1,30 @@
 export type SendVideoOptions = {
     /**
-     * Optional message to send along with the video
+     * Tin nhắn
      */
     msg?: string;
     /**
-     * URL of the video
+     * URL của video
      */
     videoUrl: string;
     /**
-     * URL of the thumbnail
+     * URL của ảnh thumbnail
      */
     thumbnailUrl: string;
     /**
-     * Video duration in milliseconds || Eg: video duration: 5.5s => 5.5 * 1000 = 5500
+     * Thời gian video, đơn vị mili giây, ví dụ: video duration: 5.5s => 5.5 * 1000 = 5500
      */
     duration?: number;
     /**
-     * Width of the video
+     * Chiều rộng của video
      */
     width?: number;
     /**
-     * Height of the video
+     * Chiều cao của video
      */
     height?: number;
     /**
-     * Time to live in milliseconds (default: 0)
+     * Thời gian tồn tại, mặc định 0 (vô hạn)
      */
     ttl?: number;
 };

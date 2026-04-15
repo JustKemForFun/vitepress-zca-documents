@@ -1,6 +1,6 @@
 export type UpdateSettingsResponse = "";
 
-export declare enum UpdateSettingsType {
+export enum UpdateSettingsType {
     ViewBirthday = "view_birthday",
     ShowOnlineStatus = "show_online_status",
     DisplaySeenStatus = "display_seen_status",

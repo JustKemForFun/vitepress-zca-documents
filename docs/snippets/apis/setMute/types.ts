@@ -1,6 +1,6 @@
 export type SetMuteParams = {
     /**
-     * Mute duration in seconds or predefined durations
+     * Thời gian tắt âm cuộc trò chuyện theo MuteDuration hoặc số (giây)
      */
     duration?: MuteDuration | number;
     action?: MuteAction;
@@ -8,14 +8,14 @@ export type SetMuteParams = {
 
 export type SetMuteResponse = "";
 
-export declare enum MuteDuration {
+export enum MuteDuration {
     ONE_HOUR = 3600,
     FOUR_HOURS = 14400,
     FOREVER = -1,
     UNTIL_8AM = "until8AM"
 }
 
-export declare enum MuteAction {
+export enum MuteAction {
     MUTE = 1,
     UNMUTE = 3
 }

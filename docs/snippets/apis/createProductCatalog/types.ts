@@ -1,16 +1,19 @@
 export type CreateProductCatalogPayload = {
+    /**
+     * Id của danh mục sản phẩm
+     */
     catalogId: string;
     productName: string;
     price: string;
     description: string;
     /**
-     * Upto 5 media files are allowed, will be ignored if product_photos is provided
+     * Tối đa 5 tệp, bỏ qua nếu dùng product_photos
      */
     files?: AttachmentSource[];
     /**
-     * List of product photo URLs, upto 5
+     * Danh sách URL ảnh sản phẩm, tối đa 5
      *
-     * You can manually get the URL using `uploadProductPhoto` api
+     * Có thể lấy URL tệp thủ công với api `uploadProductPhoto`
      */
     product_photos?: string[];
 };

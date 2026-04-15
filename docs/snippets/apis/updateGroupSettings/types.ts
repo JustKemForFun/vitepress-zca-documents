@@ -1,38 +1,38 @@
 export type UpdateGroupSettingsOptions = {
     /**
-     * Disallow group members to change the group name and avatar
+     * Không cho phép thành viên thay đổi tên và ảnh đại diện nhóm
      */
     blockName?: boolean;
     /**
-     * Highlight messages from owner/admins
+     * Đánh dấu tin nhắn từ trưởng/phó nhóm
      */
     signAdminMsg?: boolean;
     /**
-     * Don't pin messages, notes, and polls to the top of a conversation
+     * Không cho phép thành viên ghim tin nhắn, ghi chú, bình chọn lên đầu hội thoại
      */
     setTopicOnly?: boolean;
     /**
-     * Allow new members to read most recent messages
+     * Cho phép thành viên mới đọc tin nhắn gần nhất
      */
     enableMsgHistory?: boolean;
     /**
-     * Membership approval
+     * Chế độ phê duyệt thành viên mới
      */
     joinAppr?: boolean;
     /**
-     * Disallow group members to create notes & reminders
+     * Không cho phép thành viên tạo mới ghi chú, nhắc hẹn
      */
     lockCreatePost?: boolean;
     /**
-     * Disallow group members to create polls
+     * Không cho phép thành viên tạo mới bình chọn
      */
     lockCreatePoll?: boolean;
     /**
-     * Disallow group members to send messages
+     * Không cho phép thành viên gửi tin nhắn
      */
     lockSendMsg?: boolean;
     /**
-     * Disallow group members to view full member list (community only)
+     * Không cho phép thành viên xem đầy đủ danh sách thành viên (cho cộng đồng)
      */
     lockViewMember?: boolean;
 };

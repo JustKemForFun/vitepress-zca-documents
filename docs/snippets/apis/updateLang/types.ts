@@ -1,4 +1,4 @@
-export declare enum UpdateLangAvailableLanguages {
+export enum UpdateLangAvailableLanguages {
     VI = "VI",
     EN = "EN",
 }

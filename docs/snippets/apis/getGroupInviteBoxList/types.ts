@@ -27,7 +27,7 @@ export type GetGroupInviteBoxListResponse = {
             type: number;
         };
         /**
-         * Expired timestamp max 7 days
+         * Thời gian hết hạn lời mời
          */
         expiredTs: string;
         type: number;
