@@ -3,7 +3,7 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "sync:apis": "tsx scripts/sync-apis-from-zca.ts"
+    "sync:apis": "tsx scripts/sync-apis.ts"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",
