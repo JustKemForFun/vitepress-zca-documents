@@ -3,6 +3,7 @@ export type AddQuickMessagePayload = {
     title: string;
     media?: AttachmentSource;
 };
+
 export type AddQuickMessageResponse = {
     item: QuickMessage;
     version: number;

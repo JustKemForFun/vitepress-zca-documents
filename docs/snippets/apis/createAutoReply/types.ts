@@ -6,6 +6,7 @@ export type CreateAutoReplyPayload = {
     scope: AutoReplyScope;
     uids?: string | string[];
 };
+
 export type CreateAutoReplyResponse = {
     item: AutoReplyItem;
     version: number;
