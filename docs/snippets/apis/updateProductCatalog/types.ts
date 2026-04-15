@@ -1,10 +1,12 @@
 export type UpdateProductCatalogPayload = {
     catalogId: string;
+
     productId: string;
     productName: string;
     price: string;
     description: string;
     createTime: number;
+    
     /**
      * Tối đa 5 tệp, bỏ qua nếu dùng product_photos
      */

@@ -3,9 +3,11 @@ export type CreateProductCatalogPayload = {
      * Id của danh mục sản phẩm
      */
     catalogId: string;
+
     productName: string;
     price: string;
     description: string;
+    
     /**
      * Tối đa 5 tệp, bỏ qua nếu dùng product_photos
      */

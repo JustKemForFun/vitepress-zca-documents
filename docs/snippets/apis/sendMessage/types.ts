@@ -31,8 +31,8 @@ export enum TextStyle {
     Big = "f_18",
     UnorderedList = "lst_1",
     OrderedList = "lst_2",
-    Indent = "ind_$"
-}
+    Indent = "ind_$",
+};
 
 export type Style = {
     start: number; // vị trí bắt đầu định dạng
@@ -49,10 +49,10 @@ export type Style = {
 };
 
 export enum Urgency {
-    Default = 0,
-    Important = 1,
-    Urgent = 2
-}
+    Default,
+    Important,
+    Urgent,
+};
 
 export type Mention = {
     /**

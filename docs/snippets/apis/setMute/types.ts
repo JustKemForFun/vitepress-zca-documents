@@ -12,10 +12,10 @@ export enum MuteDuration {
     ONE_HOUR = 3600,
     FOUR_HOURS = 14400,
     FOREVER = -1,
-    UNTIL_8AM = "until8AM"
-}
+    UNTIL_8AM = "until8AM",
+};
 
 export enum MuteAction {
     MUTE = 1,
-    UNMUTE = 3
-}
+    UNMUTE = 3,
+};

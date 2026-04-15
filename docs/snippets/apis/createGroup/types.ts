@@ -20,8 +20,8 @@ export type CreateGroupOptions = {
      */
     avatarSource?: AttachmentSource;
     /**
-     * Path to the avatar image file
-     * @deprecated Use `avatarSource` instead
+     * Đường dẫn đến ảnh nhóm
+     * @deprecated Sử dụng `avatarSource` thay thế
      */
     avatarPath?: string;
 };
