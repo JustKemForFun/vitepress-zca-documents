@@ -12,5 +12,5 @@ export declare enum UpdateSettingsType {
     AddFriendViaContact = "add_friend_via_contact",
     DisplayOnRecommendFriend = "display_on_recommend_friend",
     ArchivedChat = "archivedChatStatus",
-    QuickMessage = "quickMessageStatus"
-}
+    QuickMessage = "quickMessageStatus",
+};
